@@ -11,7 +11,7 @@ namespace FrameworkSeleniumCsharp
         [Test]
         public void Login()
         {
-            IWebDriver driverF = new ChromeDriver("C:/VisualStudioProjects/FrameworkSeleniumCsharp");
+            IWebDriver driverF = new FirefoxDriver("C:/VisualStudioProjects/FrameworkSeleniumCsharp");
             driverF.Navigate().GoToUrl("https://www.google.ro");
             driverF.FindElement(By.Id("lst-ib")).SendKeys("Test");
             driverF.FindElement(By.XPath("//input[@name='btnK']")).Click();
