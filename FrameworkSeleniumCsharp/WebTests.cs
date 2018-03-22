@@ -18,5 +18,13 @@ namespace FrameworkSeleniumCsharp
             driverF.FindElement(By.XPath("//input[@name='btnK']")).Click();
             driverF.Close();            
         }
+        [Test]
+        public void Test2()
+        {
+            IWebDriver driverF = new FirefoxDriver("C:/GitHub/FrameworkSeleniumCsharp/FrameworkSeleniumCsharp/bin/Debug");
+            driverF.Navigate().GoToUrl("https://www.google.com");
+            driverF.FindElement(By.Id("lst-ib")).SendKeys("Test");
+            driverF.Close();
+        }
     }
 }
