@@ -21,7 +21,7 @@ namespace FrameworkSeleniumCsharp
         {
             IWebDriver driverF = new ChromeDriver("C:/GitHub/FrameworkSeleniumCsharp/FrameworkSeleniumCsharp/bin/Debug");
             driverF.Navigate().GoToUrl("https://www.google.com");
-            driverF.FindElement(By.Id("lst-i")).SendKeys("Test");
+            driverF.FindElement(By.Id("lst-ib")).SendKeys("Test");
             driverF.Close();
         }
     }
