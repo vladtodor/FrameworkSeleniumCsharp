@@ -17,7 +17,7 @@ namespace FrameworkSeleniumCsharp.Pages
     {
         private BrowerType _browserType;
 
-        private static BasePage instance = null;
+        public static BasePage instance = null;
         private static readonly object Padlock = new object();
 
         public static BasePage Instance
@@ -65,6 +65,7 @@ namespace FrameworkSeleniumCsharp.Pages
         public void CloseBrowser()
         {
             Instance.Driver.Quit();
+            instance = null;
         }
     }
 }
