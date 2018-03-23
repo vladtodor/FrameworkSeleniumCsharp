@@ -14,7 +14,7 @@ namespace FrameworkSeleniumCsharp.Scenarios
 
         private void Login()
         {                
-            _login.Login("manageronlinehr@gmail.com", "Test123$");                
+            _login.Login("/////////", "///////");                
         }
     }
 }

@@ -11,7 +11,7 @@ namespace FrameworkSeleniumCsharp.Pages
         
         public void Login(string username, string password)
         {            
-            Driver.Navigate().GoToUrl("http://www.onlinehr.biz");
+            Driver.Navigate().GoToUrl("http://www.google.ro");
             Driver.FindElement(By.XPath("//a[@href='/Account/Login']")).Click();
             Driver.FindElement(By.Id("Email")).SendKeys(username);
             Driver.FindElement(By.Id("Password")).SendKeys(password);
