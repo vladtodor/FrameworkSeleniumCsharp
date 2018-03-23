@@ -3,7 +3,7 @@ using FrameworkSeleniumCsharp.Scenarios;
 
 namespace FrameworkSeleniumCsharp.Tests
 {
-  //  [TestFixture]
+[TestFixture]
   public  class CriticalTests
     {
         public LoginScenario _loginTest;
